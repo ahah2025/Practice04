@@ -1,8 +1,10 @@
+//2025.04.25 "배열" 공부함
 package com.javaex.practice;
 
 public class Ex08 {
 
 	public static void main(String[] args) {
+		
 		//int num = (int)(Math.random()*최대값)+최소값
 
 		int n1 = (int)(Math.random()*45)+1;
