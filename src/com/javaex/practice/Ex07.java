@@ -14,6 +14,8 @@
  */
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex07 {
 
 	public static void main(String[] args) {
@@ -31,17 +33,17 @@ public class Ex07 {
 		wonArray[8] = 5;
 		wonArray[9] = 1;
 		
-		System.out.println("금액: 67879");
-		System.out.println(wonArray[0]+"원:1개");
-		System.out.println(wonArray[1]+"원:1개" );
-		System.out.println(wonArray[2]+"원:1개");
-		System.out.println(wonArray[3]+"원:2개");
-		System.out.println(wonArray[4]+"원:1개");
-		System.out.println(wonArray[5]+"원:3개");
-		System.out.println(wonArray[6]+"원:1개");
-		System.out.println(wonArray[7]+"원:2개");
-		System.out.println(wonArray[8]+"원:1개");
-		System.out.println(wonArray[9]+"원:4개");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("금액: ");
+		int money = sc.nextInt();
+
+		for (int i = 0; i < wonArray.length; i++) {
+			int won = wonArray[i];
+			int count = money / won;
+			money = money - (count * won);
+			System.out.println(won + "원:" + count + "개");
+		}
+		sc.close();
 	}
 
 }

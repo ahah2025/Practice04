@@ -8,17 +8,10 @@ public class Ex03 {
 		int[] intB;
 		intB = intA;
 		intB[0] = 20;
-		intB[1] = 10;
+		intB[2] = 10;
 		
 		for(int i=0; i<intA.length; i++) {
 			System.out.println(intA[i]);
 		}
 	}
 }
-/*
-결 과 값 
-20
-10
-9
-
-*/

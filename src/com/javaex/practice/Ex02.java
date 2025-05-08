@@ -9,7 +9,7 @@ public class Ex02 {
 		doubleArr[1]=3.3;
 		doubleArr[2]=1.2;
 		
-		for(int i=0; i<doubleArr.length; i++) {
+		for(int i=doubleArr.length-1; i>=0; i--) {
 			System.out.println(doubleArr[i]);
 		}
 
